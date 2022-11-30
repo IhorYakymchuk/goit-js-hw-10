@@ -10,6 +10,7 @@ const cardsContainer = document.querySelector('.country-list');
 
 countryInput.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY));
 
+
 function onSearch(evt) {
   const name = evt.target.value.trim();
   if (!name) {
