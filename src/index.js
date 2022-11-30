@@ -28,13 +28,13 @@ function onSearch(evt) {
         markupCountries(data);
       } else {
         cardsContainer.innerHTML = '';
-        markupContry(data);
+        markupCountry(data);
       }
     })
     .catch(onFetchError);
 }
 
-function markupContry(data) {
+function markupCountry(data) {
   const contryItem = data
     .map(
       ({
